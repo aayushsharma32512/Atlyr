@@ -1,11 +1,9 @@
 import { Navigate, useSearchParams } from "react-router-dom";
 import { AuthScreen } from "@/components/auth/AuthScreen";
 import { useAuth } from "@/contexts/AuthContext";
-import { useGuest } from "@/contexts/GuestContext";
 
 const AuthPage = () => {
   const { user, loading } = useAuth();
-  const { guestState } = useGuest();
   const [searchParams] = useSearchParams();
 
   if (loading) {
@@ -14,7 +12,7 @@ const AuthPage = () => {
 
   const next = searchParams.get("next") || "/profile/user-details";
 
-  if (user || guestState.isGuest) {
+  if (user) {
     return <Navigate to={next} replace />;
   }
 
