@@ -89,11 +89,11 @@ export default function LandingPage() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (user) {
-      navigate("/app", { replace: true });
+    if (searchParams.get("waitlist") === "1") {
       return;
     }
-    if (searchParams.get("waitlist") === "1") {
+    if (user) {
+      navigate("/app", { replace: true });
       return;
     }
     if (hasReturningMarker()) {

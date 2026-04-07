@@ -1,5 +1,4 @@
 import { supabase, SUPABASE_URL_FOR_FUNCTIONS } from "@/integrations/supabase/client"
-import { getOrSignInAnon } from "@/utils/auth"
 
 const FUNCTION_BASE = `${SUPABASE_URL_FOR_FUNCTIONS}/functions/v1`
 
@@ -65,18 +64,18 @@ export type LikenessPose = {
 }
 
 async function buildAuthHeaders({ json = true }: { json?: boolean } = {}) {
-  await getOrSignInAnon()
   const {
     data: { session },
   } = await supabase.auth.getSession()
+  if (!session?.access_token) {
+    throw new Error("auth_required")
+  }
   const headers = new Headers()
   if (json) {
     headers.set("Content-Type", "application/json")
   }
   headers.set("x-correlation-id", crypto.randomUUID())
-  if (session?.access_token) {
-    headers.set("Authorization", `Bearer ${session.access_token}`)
-  }
+  headers.set("Authorization", `Bearer ${session.access_token}`)
   return headers
 }
 
