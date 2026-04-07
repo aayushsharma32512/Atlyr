@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Remote Supabase configuration
-const REMOTE_SUPABASE_URL = "https://hhqnvjxnsbwhmrldohbz.supabase.co";
-const REMOTE_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhocW52anhuc2J3aG1ybGRvaGJ6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1Mjc0NjU2NiwiZXhwIjoyMDY4MzIyNTY2fQ.HKba451rI7d1cxFqdozeMss9TdSoMPmJD5f-ItAgOas";
+const REMOTE_SUPABASE_URL = "https://sfvacsrrbsqpmbrrhoii.supabase.co";
+const REMOTE_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNmdmFjc3JyYnNxcG1icnJob2lpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxNDIyNTYsImV4cCI6MjA5MDcxODI1Nn0.W6AXFznsCr7IvMr2H3aUfHfJGG2hYYAgUTdk5PJtarY";
 
 console.log('🔧 Using REMOTE Supabase database for product insertion');
 console.log('📊 URL:', REMOTE_SUPABASE_URL);
@@ -296,7 +296,7 @@ async function main() {
     }
     
     console.log('\n🎯 Next Steps:');
-    console.log('1. Check your remote database at: https://hhqnvjxnsbwhmrldohbz.supabase.co');
+    console.log('1. Check your remote database at: https://sfvacsrrbsqpmbrrhoii.supabase.co');
     console.log('2. Verify products were inserted correctly');
     console.log('3. Products are now available in your remote database');
     
