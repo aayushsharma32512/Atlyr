@@ -100,7 +100,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/topwear/BASIC_HEAVYWEIGHT_T-SHIRT_5.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/topwear/BASIC_HEAVYWEIGHT_T-SHIRT_5.png',
       description: 'male top baseline',
       color: '',
       color_group: null,
@@ -122,7 +122,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/bottomwear/100__LINEN_BERMUDA_SHORTS_6.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/bottomwear/100__LINEN_BERMUDA_SHORTS_6.png',
       description: 'male bottom baseline',
       color: '',
       color_group: null,
@@ -144,7 +144,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/footwear/CHUNKY_TRAINERS_5.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/male/footwear/CHUNKY_TRAINERS_5.png',
       description: 'male footwear baseline',
       color: '',
       color_group: null,
@@ -168,7 +168,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/topwear/BASIC_HEAVYWEIGHT_T-SHIRT_5.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/topwear/BASIC_HEAVYWEIGHT_T-SHIRT_5.png',
       description: 'female top baseline',
       color: '',
       color_group: null,
@@ -190,7 +190,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/bottomwear/BERMUDA_SHORTS_WITH_BELT_IN_A_LINEN_BLEND_4.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/bottomwear/BERMUDA_SHORTS_WITH_BELT_IN_A_LINEN_BLEND_4.png',
       description: 'female bottom baseline',
       color: '',
       color_group: null,
@@ -212,7 +212,7 @@ const STATIC_DEFAULT_ITEM_URLS: DefaultPreviewItemsMap = {
       price: 0,
       currency: 'INR',
       imageUrl:
-        'https://hhqnvjxnsbwhmrldohbz.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/footwear/CHUNKY_TRAINERS_5.png',
+        'https://sfvacsrrbsqpmbrrhoii.supabase.co/storage/v1/object/public/ingested_inventory/defaultitems/female/footwear/CHUNKY_TRAINERS_5.png',
       description: 'female footwear baseline',
       color: '',
       color_group: null,

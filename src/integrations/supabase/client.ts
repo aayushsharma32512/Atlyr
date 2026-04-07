@@ -6,7 +6,7 @@ import type { Database } from './types';
 const SUPABASE_URL =
   (import.meta.env as { VITE_SUPABASE_URL?: string })?.VITE_SUPABASE_URL ?? 
   (import.meta.env as { SUPABASE_URL?: string })?.SUPABASE_URL ?? 
-  "https://hhqnvjxnsbwhmrldohbz.supabase.co";
+  "https://sfvacsrrbsqpmbrrhoii.supabase.co";
 
 const SUPABASE_PUBLISHABLE_KEY =
   (import.meta.env as { VITE_SUPABASE_ANON_KEY?: string })?.VITE_SUPABASE_ANON_KEY ?? 
