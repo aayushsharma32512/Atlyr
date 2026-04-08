@@ -6,7 +6,7 @@ import type { Database } from './types';
 const SUPABASE_URL =
   (import.meta.env as { VITE_SUPABASE_URL?: string })?.VITE_SUPABASE_URL ?? 
   (import.meta.env as { SUPABASE_URL?: string })?.SUPABASE_URL ?? 
-  "https://sfvacsrrbsqpmbrrhoii.supabase.co";
+  "https://hhqnvjxnsbwhmrldohbz.supabase.co";
 
 const SUPABASE_PUBLISHABLE_KEY =
   (import.meta.env as { VITE_SUPABASE_ANON_KEY?: string })?.VITE_SUPABASE_ANON_KEY ?? 
@@ -21,6 +21,14 @@ const SUPABASE_PUBLISHABLE_KEY =
 if ((import.meta.env as { DEV?: boolean })?.DEV) {
   const isLocal = SUPABASE_URL?.includes('127.0.0.1') || false;
   console.log('🔗 CONNECTING TO:', isLocal ? 'LOCAL' : 'REMOTE', 'database at', SUPABASE_URL || 'undefined');
+
+  const urlRefMatch = SUPABASE_URL.match(/https:\/\/([^.]+)\.supabase\.co/i);
+  const keyRefMatch = SUPABASE_PUBLISHABLE_KEY.match(/"ref":"([^"]+)"/);
+  const urlRef = urlRefMatch?.[1];
+  const keyRef = keyRefMatch?.[1];
+  if (urlRef && keyRef && urlRef !== keyRef) {
+    console.warn("⚠️ Supabase URL and anon key project refs do not match", { urlRef, keyRef });
+  }
 }
 
 // Import the supabase client like this:
